@@ -3,9 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minha Página</title>
+    <title>Evento musica 2025</title>
   </head>
   <body>
-    <h1>Olá Mundo!</h1>
+    <header>
+      <h1>Festival de música 2025</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre o evento</a></li>
+          <li><a href="#agenda">Programação</a></li>
+          <li><a href="#inscricao">Inscrição</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container main">
+      <section id="sobre">
+        <h2>Sobre o evento</h2>
+        <p>
+          Participe do maior festival de música do ano! Bandas, DJs e artistas
+          de diversos estilos se apresentam ao vivo para todo o Brasil.
+        </p>
+        <img src="./imagens/festival.png" width="400px" alt="Imagem do show" />
+        <audio src="https://www.w3schools.com/html/horse.mp3" controls></audio>
+
+        <video
+          width="600"
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          controls
+        ></video>
+      </section>
+
+      <section id="agenda">
+        <h2>Programação</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Horário</th>
+              <th>Artista</th>
+              <th>Estilo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10:00</td>
+              <td>Capital Inicial</td>
+              <td>Rock</td>
+            </tr>
+            <tr>
+              <td>12:00</td>
+              <td>Lulu Santos</td>
+              <td>Pop</td>
+            </tr>
+            <tr>
+              <td>15:00</td>
+              <td>Ana Carolina</td>
+              <td>MPB</td>
+            </tr>
+            <tr>
+              <td>18:00</td>
+              <td>Estatando Devs</td>
+              <td>Indie</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="inscricao">
+        <h2>Inscreva-se para receber novidades</h2>
+
+        <form action="" method="POST">
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" placeholder="Seu nome completo" />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seu@email.com"
+            required
+          />
+
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(XX) XXXXX-XXXX"
+          />
+
+          <label for="data-nascimento">Data de nascimento</label>
+          <input type="date" id="data-nascimento" name="data-nascimento" />
+
+          <label for="genero-favorito">Gênero musical favorito</label>
+          <select id="genero-favorito" name="genero-favorito" required>
+            <option value="">Selecione</option>
+            <option value="rock">Rock</option>
+            <option value="pop">Pop</option>
+            <option value="eletronica">Eletrônica</option>
+            <option value="jazz">Jazz</option>
+            <option value="mpb">MPB</option>
+          </select>
+
+          <fieldset>
+            <legend>Como você quer receber as novidades?</legend>
+            <div class="grupo-inline">
+              <input
+                type="radio"
+                id="email"
+                name="contato"
+                value="email"
+                checked
+              />
+              <label for="email">Email</label>
+
+              <input type="radio" id="sms" name="contato" value="sms" />
+              <label for="sms"> SMS</label>
+
+              <input
+                type="radio"
+                id="whatsapp"
+                name="contato"
+                value="whatsapp"
+              />
+              <label for="whatsapp">WhatsApp</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Quais dias pretende participar?</legend>
+            <div class="grupo-inline">
+              <input type="checkbox" id="dia10" name="dias" value="10" />
+              <label for="dia10"> 10 de Março</label>
+
+              <input type="checkbox" id="dia11" name="dias" value="11" />
+              <label for="dia11"> 11 de Março</label>
+
+              <input type="checkbox" id="dia12" name="dias" value="12" />
+              <label for="dia12"> 12 de Março</label>
+            </div>
+          </fieldset>
+
+          <label for="comentarios">Comentários adicionais</label>
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            rows="4"
+            placeholder="Deixe sua mensagem aqui..."
+          ></textarea>
+
+          <button type="submit">Enviar inscrição</button>
+        </form>
+      </section>
+
+      <aside class="container dicas">
+        <h3>Dicas para aproveitar o evento</h3>
+        <ul>
+          <li>Esteja preparado para pequenos imprevistos.</li>
+          <li>
+            Evite carregar carteiras grandes e muitos cartões. A praticidade
+            ajuda na hora da compra e diminui o risco de perdas.
+          </li>
+          <li>Respeite o espaço e as pessoas ao redor.</li>
+          <li>Siga nossos perfis nas redes sociais para novidades.</li>
+        </ul>
+      </aside>
+
+      <footer class="container">
+        <p>2025 Festival de Música | Todos os direitos reservados</p>
+      </footer>
+    </main>
   </body>
 </html>
