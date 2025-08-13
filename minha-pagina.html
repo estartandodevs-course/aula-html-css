@@ -109,34 +109,39 @@
           <fieldset>
             <legend>Como você quer receber as novidades?</legend>
             <div class="grupo-inline">
-              <input type="radio" name="contato" value="email" checked />
+              <input
+                type="radio"
+                id="email"
+                name="contato"
+                value="email"
+                checked
+              />
+              <label for="email">Email</label>
 
-              <label>Email</label>
-              <label
-                ><input type="radio" name="contato" value="sms" /> SMS</label
-              >
-              <label
-                ><input type="radio" name="contato" value="whatsapp" />
-                WhatsApp</label
-              >
+              <input type="radio" id="sms" name="contato" value="sms" />
+              <label for="sms"> SMS</label>
+
+              <input
+                type="radio"
+                id="whatsapp"
+                name="contato"
+                value="whatsapp"
+              />
+              <label for="whatsapp">WhatsApp</label>
             </div>
           </fieldset>
 
           <fieldset>
             <legend>Quais dias pretende participar?</legend>
             <div class="grupo-inline">
-              <label
-                ><input type="checkbox" name="dias" value="10" /> 10 de
-                Março</label
-              >
-              <label
-                ><input type="checkbox" name="dias" value="11" /> 11 de
-                Março</label
-              >
-              <label
-                ><input type="checkbox" name="dias" value="12" /> 12 de
-                Março</label
-              >
+              <input type="checkbox" id="dia10" name="dias" value="10" />
+              <label for="dia10"> 10 de Março</label>
+
+              <input type="checkbox" id="dia11" name="dias" value="11" />
+              <label for="dia11"> 11 de Março</label>
+
+              <input type="checkbox" id="dia12" name="dias" value="12" />
+              <label for="dia12"> 12 de Março</label>
             </div>
           </fieldset>
 
@@ -151,6 +156,23 @@
           <button type="submit">Enviar inscrição</button>
         </form>
       </section>
+
+      <aside class="container dicas">
+        <h3>Dicas para aproveitar o evento</h3>
+        <ul>
+          <li>Esteja preparado para pequenos imprevistos.</li>
+          <li>
+            Evite carregar carteiras grandes e muitos cartões. A praticidade
+            ajuda na hora da compra e diminui o risco de perdas.
+          </li>
+          <li>Respeite o espaço e as pessoas ao redor.</li>
+          <li>Siga nossos perfis nas redes sociais para novidades.</li>
+        </ul>
+      </aside>
+
+      <footer class="container">
+        <p>2025 Festival de Música | Todos os direitos reservados</p>
+      </footer>
     </main>
   </body>
 </html>
